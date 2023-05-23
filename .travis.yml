@@ -1,3 +1,4 @@
+dist: jammy
 language: node_js
 cache: npm
 node_js:
