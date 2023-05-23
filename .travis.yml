@@ -1,7 +1,5 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
+cache: npm
 node_js:
   - 'stable'
 git:
@@ -11,7 +9,7 @@ script:
 deploy:
   provider: pages
   edge: true
-  skip-cleanup: true
+  cleanup: false
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
